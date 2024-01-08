@@ -52,6 +52,6 @@ This effect runs whenever the `live` state changes. It starts an interval that c
 
 This function renders the grid. It creates an array of div elements for each cell in the grid, with the `backgroundColor` style property set to "red" for live cells and "green" for dead cells. It then wraps each row of cells in a div element and returns the array of row elements.
 
-## GameOfLife({ rows, cols, liveCells = ["1-2", "2-2", "2-1", "2-0", "3-3"] })
+## GameOfLife({ rows, cols, liveCells})
 
 This is the main component function. It takes in props for the number of rows and columns in the grid, and an optional array of initial live cells. It initializes the `live` state with the initial live cells, calculates the container width and height based on the number of rows and columns and the cell size, and returns a div element that contains the rendered grid.

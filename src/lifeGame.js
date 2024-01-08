@@ -11,8 +11,6 @@ function getNeighborPositions(row, col, rows, cols) {
     [row + 1, col],
     [row + 1, col + 1],
   ];
-
-  // Filter out positions that are outside the grid
   return positions.filter(([r, c]) => r >= 0 && r < rows && c >= 0 && c < cols);
 }
 
